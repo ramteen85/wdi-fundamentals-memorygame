@@ -23,7 +23,6 @@ var cards = [
 var cardsInPlay = [];
 
 function checkForMatch(clickedCard) {
-    console.log("clicked " + clickedCard);
     var found = false;
     console.log(cardsInPlay[0]);
     for(var x = 0; x < cardsInPlay.length; x++) {
@@ -32,7 +31,6 @@ function checkForMatch(clickedCard) {
             alert("You found a match!");
         }
     }
-
     if(cardsInPlay.length > 0 && !found)
     {
         alert("Sorry, try again.");
